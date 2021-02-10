@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AES-CBC Benchmarks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container main">
+    <div class="row">
+        <div class="col-md-12">
+          <label>Upload test file</label>
+
+          <input type="file" id="file_to_test" name="file_to_test"><span class="file_size"></span>
+          <button class="btn btn-default encryption-button" style="display:block">Check read + encryption timing</button>
+          <div class="results_encryption">AES-CBC (256 bits) Encryption time: <span></span> seconds.</div>
+
+          <br/>
+          <button class="btn btn-default decryption-button" disabled>Check decryption timing</button>
+          <div class="results_decryption">AES-CBC (256 bits) Decryption: <span></span> seconds.</div>
+
+          <br /><br />
+          <div>Clear files after every process enc+dec</div>
+          <button class="delete_file">Clear filesystem</button>
+        </div>
+    </div>
+  </div>
+</body>
+
+<script src="script.js"></script>
+</html>
